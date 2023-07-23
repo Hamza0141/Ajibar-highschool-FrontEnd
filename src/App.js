@@ -12,9 +12,6 @@ import Que from "./pages/AskQuestion/AskQuestion";
 import AnswerQuestion from "./pages/QuestionDetail/QuestionDetail";
 import PersonalQuestion from "./pages/PersonalQuestion/PersonalQuestion";
 
-
-
-
 function App() {
   const [userData, setUserData] = useContext(UserContext);
 
@@ -35,7 +32,7 @@ function App() {
         },
       });
     }
-  };
+  }
 
   const logout = () => {
     setUserData({
