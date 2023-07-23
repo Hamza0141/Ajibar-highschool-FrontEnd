@@ -72,25 +72,25 @@ const Login = () => {
           </p>
           <form onSubmit={handleSubmit}>
             <input
-              className="in1"
+              className="input1"
               type="email"
               name="email"
               onChange={handleChange}
               placeholder="Your Email"
             />
             <input
-              className="in1"
+              className="input1"
               type={type}
               name="password"
               onChange={handleChange}
               placeholder="Your Password"
             />
             <span onClick={HandleIconChange} className="showHide2">
-              <Icon icon={icon} size={20} />
+              <Icon className="field-icon" icon={icon} size={20} />
             </span>
             <button className="btn1">Login</button>
           </form>
-          <Link to="/signup" className="a3 a1">
+          <Link to="/signup" className="a3">
             Create an account?
           </Link>
         </div>
@@ -98,22 +98,15 @@ const Login = () => {
           <p className="forTitle">About</p>
           <h1>Evangadi Networks Q&A</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
-            voluptate officiis beatae nobis pariatur omnis facere accusamus
-            laboriosam hic, adipisci vero reiciendis, recusandae sit ad, eum
-            quisquam! Molestias, ut commodi!
+            No matter what stage of life you are in, whether you’re just
+            starting elementary school or being promoted to CEO of a Fortune 500
+            company, you have much to offer to those who are trying to follow in
+            your footsteps.!
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
-            voluptate officiis beatae nobis pariatur omnis facere accusamus
-            laboriosam hic, adipisci vero reiciendis, recusandae sit ad, eum
-            quisquam! Molestias, ut commodi!
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
-            ipsum, provident minus laudantium esse soluta maiores nostrum nisi
-            sunt perferendis dolorum. Praesentium necessitatibus quia
-            consectetur sunt tempora possimus eveniet voluptates?
+            Wheather you are willing to share your knowledge or you are just
+            looking to meet mentors of your own, please start by joining the
+            network here.
           </p>
           <button className="btn1">HOW IT WORKS</button>
         </div>
