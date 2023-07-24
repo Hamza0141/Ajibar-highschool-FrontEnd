@@ -1,7 +1,6 @@
 import React from 'react'
 import "./Question.css";
 import profile from "../../Images/user1.png"
-import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 
 const Question = ({question,userName}) => {
     return (
@@ -18,7 +17,7 @@ const Question = ({question,userName}) => {
         <div className="d-none d-md-block ms-md-5">
         
           {/* <i className="fa fa-angle-right" aria-hidden="true"></i> */}
-          <ChevronRightIcon className='fa' />
+
         </div>
       </div>
     );
