@@ -6,7 +6,8 @@ import axios from "axios";
 import Question from "../../Components/Question/Question";
 
 const Home = () => {
-  const [userData, setUserData] = useContext(UserContext);
+  // const [userData, setUserData] = useContext(UserContext);
+   const [userData] = useContext(UserContext);
   const [allQuestions, setAllQuestions] = useState([]);
    const [search, setSearch] = useState("");
   const navigate = useNavigate();

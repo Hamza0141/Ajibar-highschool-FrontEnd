@@ -8,7 +8,7 @@ import "./AnswerQuestion.css";
 // import 'react-quill/dist/quill.snow.css';
 
 const AnswerQuestion = ({ questionId, hider }) => {
-  const [userData, setUserData] = useContext(UserContext);
+  const [userData] = useContext(UserContext);
 
   const [form, setForm] = useState({});
   const handleChange = (e) => {

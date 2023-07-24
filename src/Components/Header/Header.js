@@ -6,7 +6,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { UserContext } from "../../context/UserContext";
 
 function Header1({ logout }) {
-  const [userData, setUserData] = useContext(UserContext);
+  const [userData] = useContext(UserContext);
   const navigate = useNavigate();
 
   const goToSignIn = (e) => {

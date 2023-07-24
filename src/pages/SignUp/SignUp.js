@@ -39,6 +39,7 @@ const SignUp = () => {
       alert(error.response.data.msg);
     }
   };
+console.log(userData);
 
   // to change type attribute from 'password' to 'text' and vice versa
   const [icon, setIcon] = useState(eyeOff);
