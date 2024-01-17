@@ -96,23 +96,25 @@ const Login = () => {
         </div>
         <div className="sideNote2 container col-12 col-md-6 ms-md-2  mt-sm-5">
           <p className="forTitle">About</p>
-          <h1>Evangadi Networks Q&A</h1>
+          <h1>Welcome to Ajibar High School Forum</h1>
           <p>
-            No matter what stage of life you are in, whether you’re just
-            starting elementary school or being promoted to CEO of a Fortune 500
-            company, you have much to offer to those who are trying to follow in
-            your footsteps.!
+            At Ajibar High School Forum, we believe in fostering a vibrant and
+            collaborative educational community. Our platform serves as a
+            dedicated space where students can engage in meaningful discussions,
+            ask questions, and connect with their peers, teachers, and
+            classmates.!
           </p>
+          <h1> Our Mission</h1>
           <p>
-            Wheather you are willing to share your knowledge or you are just
-            looking to meet mentors of your own, please start by joining the
-            network here.
+            Ajibar High School Forum is committed to enhancing the educational
+            experience by promoting collaboration, curiosity, and
+            knowledge-sharing among students. We believe that everyone in our
+            school community plays a crucial role in the learning process.
           </p>
-          <button className="btn1">HOW IT WORKS</button>
         </div>
       </div>
     </div>
-  )
+  );
 };
 
 export default Login;

@@ -4,7 +4,7 @@ import { facebook } from "react-icons-kit/feather/facebook";
 import { instagram } from "react-icons-kit/feather/instagram";
 import { youtube } from "react-icons-kit/feather/youtube";
 import "./Footer.css";
-import logo from "../../Images/logo1.png";
+import logo from "../../Images/0pZ5lN-LogoMakrWhite.png";
 
 export default function Footer() {
   return (
@@ -17,10 +17,10 @@ export default function Footer() {
             <a href="https://www.facebook.com/EthiopiansNetwork">
               <Icon icon={facebook} size={25} />
             </a>
-            <a href="https://www.instagram.com/evangaditech/">
+            <a href="https://www.instagram.com/">
               <Icon icon={instagram} size={25} />
             </a>
-            <a href="https://www.youtube.com/c/weareethiopians">
+            <a href="https://www.youtube.com/">
               <Icon icon={youtube} size={25} />
             </a>
           </div>
@@ -28,7 +28,7 @@ export default function Footer() {
         <div className="row">
         <h3 className="titlee"> Useful Link</h3>
           <div className="Useful-Link ">
-            <a href="https://www.evangadi.com/explained/">How it works</a>
+            <a href="/">How it works</a>
 
             <a href="https://www.evangadi.com/legal/terms/">Terms of Service</a>
 
@@ -38,9 +38,9 @@ export default function Footer() {
         <div className="row">
           <div className="Contact-Info">
             <h3 className="titlee"> Contact Info</h3>
-            <p>Evangadi Networks</p>
-            <p>support@evangadi.com</p>
-            <p>+1-202-386-2702</p>
+            <p>Hamza Haile</p>
+            <p>hamzaserke@gmail.com</p>
+            <p>+1-816-662-6761</p>
           </div>
         </div>
     </footer>

@@ -7,7 +7,6 @@ import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
 
 function AskQuestion() {
-  // const [userData, setUserData] = useContext(UserContext);
     const [userData] = useContext(UserContext);
   const [form, setForm] = useState({});
   const navigate = useNavigate();

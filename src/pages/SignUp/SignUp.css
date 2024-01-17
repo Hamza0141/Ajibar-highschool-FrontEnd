@@ -106,3 +106,9 @@ form {
 .a22 {
 	margin-right: 0px;
 }
+.keyFeatures{
+	font-size: 25px;
+    color: #4b456f;
+    font-weight: 600;
+    line-height: 52px;
+}

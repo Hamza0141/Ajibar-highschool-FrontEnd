@@ -58,7 +58,7 @@ console.log(userData);
     <div className="container-fluid sign_page">
       <div className="container d-md-flex mx-auto py-5 align-items-center">
         <div className="form_wrapper col-12 col-md-6 me-md-2 p-5 d-flex flex-column">
-          <p className="p11">Join the network</p>
+          <p className="p11">Join The Community</p>
           <p className="p22 lorem">
             Already have an account?
             <Link to="/login" className="a11">
@@ -128,26 +128,40 @@ console.log(userData);
         </div>
         <div className="SignupNote container col-12 col-md-6 ms-md-2  mt-sm-5">
           <p className="forTitle">About</p>
-          <h1>Evangadi Networks Q&A</h1>
-          <p className="lorem">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
-            voluptate officiis beatae nobis pariatur omnis facere accusamus
-            laboriosam hic, adipisci vero reiciendis, recusandae sit ad, eum
-            quisquam! Molestias, ut commodi!
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
-            voluptate officiis beatae nobis pariatur omnis facere accusamus
-            laboriosam hic, adipisci vero reiciendis, recusandae sit ad, eum
-            quisquam! Molestias, ut commodi!
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolor
-            odio harum sunt, quaerat, molestias fuga expedita ad excepturi
-            officiis aliquam aut nemo ratione culpa id laborum ipsum porro
-            tempore?
-          </p>
-          <button className="btn1">HOW IT WORKS</button>
+          <h1>Welcome to Ajibar High School Forum</h1>
+          <h3 className="keyFeatures">Key Features</h3>
+          <div>
+            <h4 className="keyFeatures">I Ask and Learn</h4>
+            <p>
+              Pose questions related to your studies, assignments, or any
+              educational topic, and receive insightful responses from your
+              fellow students, teachers, and classmates.
+            </p>
+          </div>
+
+          <div>
+            <h4 className="keyFeatures">II Community-driven Knowledge</h4>
+            <p>
+              Tap into the collective knowledge of Ajibar High School. Everyone
+              has something valuable to contribute, creating a dynamic learning
+              environment.
+            </p>
+          </div>
+
+          <div>
+            <h4 className="keyFeatures">III Supportive Network</h4>
+            <p>
+              Connect with your classmates and teachers outside the classroom.
+              Strengthen the sense of community by sharing ideas, experiences,
+              and helping each other grow academically.
+            </p>
+            <h4 className="keyFeatures">Get Started</h4>
+            <p>
+              Join the Ajibar High School Forum today and be part of a community
+              where learning knows no bounds. Ask questions, share your
+              insights, and embark on a journey of collaborative learning!
+            </p>
+          </div>
         </div>
       </div>
     </div>

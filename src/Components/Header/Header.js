@@ -1,7 +1,7 @@
 import "./Header.css";
 import React, { useContext } from "react";
 import "./Header.css";
-import logo from "../../Images/evangadi-logo-home.png";
+import logo from "../../Images/5YcSZp-LogoMakr.png";
 import { Link, useNavigate } from "react-router-dom";
 import { UserContext } from "../../context/UserContext";
 
