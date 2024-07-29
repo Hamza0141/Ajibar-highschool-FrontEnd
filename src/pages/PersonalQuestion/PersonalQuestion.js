@@ -38,7 +38,7 @@ function PersonalQuestion() {
   return (
     <div className="container my-5 home-container">
       <h1>Select</h1>
-      <h4>Welcome: {userData.user?.display_name}</h4>
+      <h4>Welcome {userData.user?.display_name}</h4>
 
       <div>
         {ownQuestion.map((question) => (
