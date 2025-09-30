@@ -3,8 +3,8 @@
   }
   .question_form {
       min-height: 500px;
-      border-radius: 15px;
-      background: #ffffff;
+      border-radius: 5px;
+      background:transparent !important;
       box-shadow: 5px 5px 10px #e8e8e8, -5px -5px 10px #ffffff;
   }
   .question_title{
@@ -90,9 +90,10 @@
 .quill{
 	height: 250px;
 	background-color: #F1F2F3;
-	mask-image: linear-gradient(black 5%, transparent) !important;
+	mask-image: linear-gradient(black 5%) !important;
 	color: black;
 	border: none;
+    	border-radius: 15px;
 }
 .ql-container.ql-snow{
 	border: none !important;

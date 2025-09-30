@@ -1,44 +1,48 @@
 import axios from "axios";
 import { useContext, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import "./App.css";
 import { UserContext } from "./context/UserContext";
 import Header1 from "./Components/Header/Header";
-import Home from "./pages/Home/Home"
-import Login from "./pages/login/Login";
-import SignUp from "./pages/SignUp/SignUp";
 import Footer from "./Components/Footer/Footer";
-import Que from "./pages/AskQuestion/AskQuestion";
-import AnswerQuestion from "./pages/QuestionDetail/QuestionDetail";
-import PersonalQuestion from "./pages/PersonalQuestion/PersonalQuestion";
+import routes from "./routes";
 
 function App() {
   const [userData, setUserData] = useContext(UserContext);
 
   const checkLoggedIn = async () => {
     let token = localStorage.getItem("auth-token");
-    if (token === null) {
+    if (!token) {
       localStorage.setItem("auth-token", "");
       token = "";
     } else {
-      const userRes = await axios.get(`${process.env.REACT_APP_base_url}/api/users`, {
-        headers: { "x-auth-token": token },
-      });
-      setUserData({
-        token,
-        user: {
-          id: userRes.data.data.user_id,
-          display_name: userRes.data.data.user_name,
-        },
-      });
+      try {
+        const userRes = await axios.get(
+          `${process.env.REACT_APP_base_url}/api/users`,
+          {
+            headers: { "x-auth-token": token },
+          }
+        );
+        setUserData({
+          token,
+          user: {
+            id: userRes.data.data.user_id,
+            display_name: userRes.data.data.user_name,
+          },
+        });
+      } catch (err) {
+        console.error("Token verification failed:", err);
+      }
     }
-  }
+  };
 
   const logout = () => {
-    setUserData({
-      token: undefined,
-      user: undefined,
-    });
+    setUserData({ token: undefined, user: undefined });
     localStorage.setItem("auth-token", "");
   };
 
@@ -50,16 +54,19 @@ function App() {
     <Router>
       <Header1 logout={logout} />
       <Routes>
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/" element={<Home logout={logout} />} />
-        <Route path="/ask-question" element={<Que />} />
-        <Route path="/questions/:id" element={<AnswerQuestion />} />
-        <Route path="/YourQuestion" element={<PersonalQuestion />} />
-        <Route
-          path="/YourQuestion/questions/:id"
-          element={<AnswerQuestion />}
-        />
+        {routes.map(({ path, element: Component, protected: isProtected }) => (
+          <Route
+            key={path}
+            path={path}
+            element={
+              isProtected && !userData?.token ? (
+                <Navigate to="/login" replace />
+              ) : (
+                <Component logout={logout} />
+              )
+            }
+          />
+        ))}
       </Routes>
       <Footer />
     </Router>

@@ -1,11 +1,19 @@
+
+:root {
+  --blue-medium: #1f4068;
+  --blue-dark: #001f40;
+}
+
+
 .home-container {
 	min-width: 500px;
     min-height: 65vh;
+	color: white
 }
 .ask_button {
 	width: 200px;
 	height: 41px;
-	background-color: #516cf0;
+	background-color: transparent;
 	color: white;
 	border: none;
 	border-radius: 4px;
@@ -16,7 +24,7 @@
 .YourQuestion {
 	width: 200px;
 	height: 41px;
-	background-color: yellowgreen;
+	background-color: transparent;
 	color: white;
 	border: none;
 	border-radius: 4px;
@@ -25,16 +33,14 @@
 	font-size: 1rem;
 }
 .ask_button:hover {
-	background-color: #ff8500;
+	background-color:  #FF8500;
 }
 .YourQuestion:hover {
-background-color: #ff0000;
+background-color:  #FF8500;
 }
-.ask_button:active {
-	border: 3px solid #516cf0;
-}
+
 .YourQuestion:active {
-	border: 3px solid #516cf0;
+	border: 3px solid  #FF8500;
 }
 hr {
     margin-top: 1rem;

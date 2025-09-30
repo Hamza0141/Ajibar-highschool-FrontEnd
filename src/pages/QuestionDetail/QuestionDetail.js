@@ -44,7 +44,7 @@ const SingleQuestion = () => {
         <h5>{question?.question}</h5>
         <div>
           {/* {question?.question_description} */}
-          <div
+          <p className="questionDescription"
             dangerouslySetInnerHTML={{ __html: question?.question_description }}
           />
         </div>

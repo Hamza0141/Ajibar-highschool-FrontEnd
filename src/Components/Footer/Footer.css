@@ -1,14 +1,22 @@
+:root {
+  --blue-medium: #1f4068;
+  --blue-dark: #001f40;
+}
+
 .footer-wrapper {
   	min-width: 500px;
-	background-color: #3b455a;
-	padding-left: 30px;
+background: var(--blue-dark);
+  background: linear-gradient(
+    135deg,
+    var(--blue-dark) 0%,
+    var(--blue-medium) 100%
+  );
+
 }
-.Useful-link {
-	border: 1px solid #3b455a;
-}
+
 .Icon {
 	width: 400px;
-	padding-top: 10px;
+
 }
 .Icon > a {
 	margin-right: 40px;

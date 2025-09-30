@@ -1,7 +1,7 @@
 .answer_form {
 	min-height: 490px;
 	border-radius: 15px;
-	background: #ffffff;
+	background:transparent;
 	box-shadow: 5px 5px 10px #e8e8e8, -5px -5px 10px #ffffff;
 }
 .delet{

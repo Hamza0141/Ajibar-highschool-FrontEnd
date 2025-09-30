@@ -15,24 +15,28 @@ function PersonalQuestion() {
       const questionRes = await axios.get(
         `${process.env.REACT_APP_base_url}/api/questions`
       );
-
+      
       const questionDataArray = Array.isArray(questionRes.data.data)
-        ? questionRes.data.data
-        : [questionRes.data.data];
-
+      ? questionRes.data.data
+      : [questionRes.data.data];
       const filteredQuestions = questionDataArray.filter((question) => {
         return question?.user_name === userData.user?.display_name;
       });
-
+      
+      console.log(questionRes);
       setOwnQuestions(filteredQuestions);
     } catch (err) {
       console.log("problem", err);
     }
   };
-
+  console.log(ownQuestion);
+  
   useEffect(() => {
-    if (!userData.user) navigate("/login");
-    Questions();
+    if (!userData.user) {
+      navigate("/login");
+    } else {
+      Questions();
+    }
   }, [userData.user, navigate]);
 
   return (

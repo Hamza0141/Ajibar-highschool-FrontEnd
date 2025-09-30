@@ -44,8 +44,8 @@ const Home = () => {
 
   
 
-    const handledelet = (e) => {
-          e.preventDefault();
+    const yorQuestions = (e) => {
+      e.preventDefault();
       navigate("/YourQuestion");
     };
 
@@ -64,7 +64,7 @@ const Home = () => {
           onChange={(e) => setSearch(e.target.value)}
         />
 
-        <button className="YourQuestion" onClick={handledelet}>
+        <button className="YourQuestion" onClick={yorQuestions}>
           YourQuestion
         </button>
         <h4>Welcome: {userData.user?.display_name}</h4>

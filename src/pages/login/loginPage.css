@@ -1,0 +1,145 @@
+body {
+  background: var(--blue-dark) !important;
+  background: linear-gradient(
+    135deg,
+    var(--blue-medium) 100%
+  ) !important;
+}
+
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--blue-dark);
+  background: linear-gradient(
+    135deg,
+    var(--blue-dark) 0%,
+    var(--blue-medium) 100%
+  );
+  font-family: "Poppins", sans-serif;
+}
+.loginMissionContainer{
+  display: flex;
+  max-width: 90%;
+  width: 100%;
+   background: var(--blue-dark);
+  background: linear-gradient(
+    135deg,
+    var(--blue-dark) 0%,
+    var(--blue-medium) 100%
+  );
+  overflow: hidden;
+}
+
+.login-container {
+  display: flex;
+  max-width: 1100px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  border-radius: 15px;
+  overflow: hidden;
+}
+.login-form-container {
+  display: flex;
+  max-width: 1100px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  border-radius: 15px;
+  overflow: hidden;
+  margin-right: 5%;
+}
+.mission-container {
+  display: flex;
+  max-width: 1100px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  border-radius: 15px;
+  overflow: hidden;
+
+}
+
+.login-form {
+  flex: 1;
+  padding: 3rem;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20%;
+}
+
+.login-info {
+  flex: 1;
+  padding: 3rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-info h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+.login-info p {
+  color:#a5acb2;
+}
+
+.title {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  color: #ddd;
+  margin-bottom: 2rem;
+}
+
+.link {
+  color: #00aaff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.input {
+  width: 100%;
+  padding: 0.9rem;
+  margin-bottom: 1.2rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.showHide {
+  position: absolute;
+  right: -10%;
+  top: 110%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #333;
+}
+
+.btn {
+  width: 100%;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  background: var(--blue-medium);
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #16335a;
+}
